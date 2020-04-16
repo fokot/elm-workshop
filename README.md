@@ -23,8 +23,8 @@ mkdir new-project
 cd new-project
 elm init
 ```
-* type starts with uppercase
-* variables and also type variables with lowercase
+* Types start with uppercase
+* Variables and also type variables with lowercase
 * These three are equivalent
 ```
 -- onClick : msg -> Attribute msg
