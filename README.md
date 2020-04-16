@@ -1,4 +1,4 @@
-# Elm tutorial given at 15. Apr 2020
+# Elm tutorial given at April 15 2020
 
 Bug part of it is not in this repository as was only shown as live coding or in different project 
 
@@ -48,4 +48,4 @@ elm install mdgriffith/elm-ui
 * `Cmd` are run by Elm platform and only way how they can return value back to application is that they produce `Msg` which is processed by `update`
 * Communication with JS is done via `ports`
 * [elm-ui](https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest) is cool
-* json encoders/decoders are lot of boilerplate
+* Json encoders/decoders are lot of boilerplate
