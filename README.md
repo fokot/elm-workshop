@@ -1,4 +1,4 @@
-# Elm tutorial given at April 15 2020
+# Elm workshop given at April 15 2020
 
 Bug part of it is not in this repository as was only shown as live coding or in different project 
 
