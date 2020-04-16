@@ -23,6 +23,19 @@ mkdir new-project
 cd new-project
 elm init
 ```
+* type starts with uppercase
+* variables and also type variables with lowercase
+* These three are equivalent
+```
+-- onClick : msg -> Attribute msg
+-- type Msg = ChangeColor Color
+-- this creates constructor function: ChangeColor : Color -> Msg
+
+-- these are equivalent and all of them return Attribute Msg
+onClick (ChangeColor Red)
+onClick <| ChangeColor Red
+ChangeColor Blue |> onClick
+```
 * To find elm packages use [https://package.elm-lang.org/]
 * `List` and `Maybe` modules in core are sparse, you will probably need `List.Extra` and `Maybe.Extra`
 * Install new package as
