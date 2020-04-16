@@ -8,7 +8,7 @@ Bug part of it is not in this repository as was only shown as live coding or in 
 * subscriptions - rotating colors on time events
 * elm-ui
 * routing
-* moving component to extra file 
+* moving component to extra file (embedding component model and messages to global one)
 * ports + working with jsons
 
 ## Run as
