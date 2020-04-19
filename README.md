@@ -1,6 +1,6 @@
 # Elm workshop given at April 15 2020
 
-Bug part of it is not in this repository as was only shown as live coding or in different project 
+Big part of it is not in this repository as was only shown as live coding or in different project 
 
 ## Topics
 * basic syntax - types, functions and operators (`<|`, `|>`, `>>`, `<<`), `List`, `Maybe`, `List.Extra`, `Maybe.Extra`
@@ -49,3 +49,15 @@ elm install mdgriffith/elm-ui
 * Communication with JS is done via `ports`
 * [elm-ui](https://package.elm-lang.org/packages/mdgriffith/elm-ui/latest) is cool
 * Json encoders/decoders are lot of boilerplate
+* For routing use `Browser.application`
+```
+application :
+    { init : flags -> Url.Url -> Navigation.Key -> ( model, Cmd msg )
+    , view : model -> Document msg
+    , update : msg -> model -> ( model, Cmd msg )
+    , subscriptions : model -> Sub msg
+    , onUrlRequest : UrlRequest -> msg
+    , onUrlChange : Url.Url -> msg
+    }
+    -> Program flags model msg
+```
