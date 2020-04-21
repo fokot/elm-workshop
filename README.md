@@ -25,6 +25,50 @@ elm init
 ```
 * Types start with uppercase
 * Variables and also type variables with lowercase
+* Structural typing
+```
+type alias A1 = { a : String }
+type alias A2 = { a : String }
+type alias A3 = { a : Int }
+type alias AB = { a : String, b : String }
+
+a1 : A1
+a1 = { a = "" }
+
+a2 : A2
+a2 = { a = "" }
+
+a3 : A3
+a3 = { a = 123 }
+
+ab : AB
+ab = { a = "a", b = "b" }
+
+a2_a1 : A2
+a2_a1 = a1
+
+-- not compilable
+--a2_a3 : A2
+--a2_a3 = a3
+
+f1 : A2 -> Int
+f1 _ = 123
+
+-- works with A1 and A2
+r1a1 = f1 a1
+r1a2 = f1 a2
+
+-- does not compile with AB
+--r1ab = f1 ab
+
+f2 : { a | a : String } -> Int
+f2 _ = 123
+
+-- works with A1, A2 and AB
+r2a1 = f2 a1
+r2a2 = f2 a2
+r2ab = f2 ab
+```
 * These three are equivalent
 ```
 -- onClick : msg -> Attribute msg
