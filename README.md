@@ -51,6 +51,10 @@ a2_a1 = a1
 --a2_a3 : A2
 --a2_a3 = a3
 
+-- not compilable
+--a2_ab : A2
+--a2_ab = ab
+
 f1 : A2 -> Int
 f1 _ = 123
 
